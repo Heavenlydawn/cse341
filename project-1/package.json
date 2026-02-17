@@ -1,7 +1,7 @@
 {
   "name": "cse341",
   "version": "1.0.0",
-  "description": "Develop and API",
+  "description": "Contacts API",
   "main": "server.js",
   "scripts": {
     "start": "node ./src/server.js",
@@ -12,7 +12,7 @@
     "API",
     "MongoDB"
   ],
-  "author": "Christian I. Ahanonu",
+  "author": "Heaven Gabriel",
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
