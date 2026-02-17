@@ -1,0 +1,23 @@
+[
+    {
+        "firstName": "Pablo",
+        "lastName": "Garcia",
+        "email": "pablogarcia@gmail.com",
+        "favoriteColor": "gray",
+        "birthday": "Jan-23-1922"
+    },
+    {
+        "firstName": "Jennifer",
+        "lastName": "Richardson",
+        "email": "jenniferrichardson@gmail.com",
+        "favoriteColor": "white",
+        "birthday": "Mar-2-1999"
+    },
+    {
+        "firstName": "Blessing",
+        "lastName": "Bronson",
+        "email": "blessingbronson@gmail.com",
+        "favoriteColor": "dark blue",
+        "birthday": "Oct-25-1992"
+    }
+]

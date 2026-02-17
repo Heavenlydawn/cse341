@@ -1,0 +1,18 @@
+## Get all contacts
+GET https://cse-341-project1-7kuv.onrender.com/contacts/
+
+
+## Get contact by ID
+GET https://cse-341-project1-7kuv.onrender.com/contacts/6994e711b0bf69d802a2bd18
+
+
+## Add new contact
+POST https://cse-341-project1-7kuv.onrender.com/contacts/6994e711b0bf69d802a2bd18
+
+
+## Update a contact
+PUT https://cse-341-project1-7kuv.onrender.com/contacts/6994e711b0bf69d802a2bd18
+
+
+## Delete a contact
+DELETE https://cse-341-project1-7kuv.onrender.com/contacts/6994e711b0bf69d802a2bd18

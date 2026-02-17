@@ -1,0 +1,30 @@
+{
+  "name": "cse341",
+  "version": "1.0.0",
+  "description": "Develop and API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node ./src/server.js",
+    "dev": "nodemon ./src/server.js",
+    "swagger": "node ./src/utils/swagger.js"
+  },
+  "keywords": [
+    "API",
+    "MongoDB"
+  ],
+  "author": "Christian I. Ahanonu",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "body-parser": "^2.2.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "express-validator": "^7.2.1",
+    "mongodb": "^6.19.0",
+    "swagger-ui-express": "^5.0.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10",
+    "swagger-autogen": "^2.23.7"
+  }
+}
