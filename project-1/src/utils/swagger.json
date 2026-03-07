@@ -5,15 +5,24 @@
     "description": "API serving a list of contacts",
     "version": "1.0.0"
   },
-  "host": "cse-341-project1-7kuv.onrender.com",
+  "host": "localhost:8080",
   "basePath": "/",
+  "tags": [
+    {
+      "name": "Contacts",
+      "description": "Endpoints related to contacts"
+    }
+  ],
   "schemes": [
-    "https",
-    "http"
+    "http",
+    "https"
   ],
   "paths": {
     "/contacts": {
       "get": {
+          "tags": [
+          "Contacts"
+        ],
         "description": "",
         "responses": {
           "200": {
@@ -25,6 +34,9 @@
         }
       },
       "post": {
+        "tags": [
+          "Contacts"
+        ],
         "description": "",
         "parameters": [
           {
@@ -64,6 +76,9 @@
     },
     "/contacts/{id}": {
       "get": {
+        "tags": [
+          "Contacts"
+        ],
         "description": "",
         "parameters": [
           {
@@ -86,6 +101,9 @@
         }
       },
       "put": {
+        "tags": [
+          "Contacts"
+        ],
         "description": "",
         "parameters": [
           {
@@ -132,6 +150,9 @@
         }
       },
       "delete": {
+        "tags": [
+          "Contacts"
+        ],
         "description": "",
         "parameters": [
           {
@@ -150,16 +171,6 @@
           },
           "500": {
             "description": "Internal Server Error"
-          }
-        }
-      }
-    },
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
           }
         }
       }

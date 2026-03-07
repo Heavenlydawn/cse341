@@ -24,7 +24,7 @@ app
 app.get('/', (req, res) => { res.send('Homepage') })
 
 // Contacts route
-app.use('/', contactRoute);
+app.use('/contacts', contactRoute);
 
 // Swagger route
 app.use('/', require('./routes/swaggerRoute.js'))

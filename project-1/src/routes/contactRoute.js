@@ -2,19 +2,24 @@ const router = require('express').Router();
 const contactController = require('../controllers/contactController.js')
 
 // Get all contact route
-router.get('/contacts', contactController.getAllContacts);
+// #swagger.tags=['Contacts']
+router.get('/', contactController.getAllContacts);
 
 // Get a single contact
-router.get('/contacts/:id', contactController.getContactByID);
+// #swagger.tags=['Contacts']
+router.get('/:id', contactController.getContactByID);
 
 // Add a contact
-router.post('/contacts', contactController.createContact);
+// #swagger.tags=['Contacts']
+router.post('/', contactController.createContact);
 
 // Update a contact
-router.put('/contacts/:id', contactController.updateContact);
+// #swagger.tags=['Contacts']
+router.put('/:id', contactController.updateContact);
 
 // Delete a contact
-router.delete('/contacts/:id', contactController.deleteContact);
+// #swagger.tags=['Contacts']
+router.delete('/:id', contactController.deleteContact);
 
 
 module.exports = router; 

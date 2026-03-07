@@ -1,6 +1,7 @@
 const mongodb = require("../database/connect.js");
 const objectId = require("mongodb").ObjectId;
 
+// #swagger.tags=['Contacts']
 const getAllContacts = async (req, res) => {
     try {
         const result = await mongodb
@@ -30,6 +31,7 @@ const getAllContacts = async (req, res) => {
     }
 };
 
+// #swagger.tags=['Contacts']
 const getContactByID = async (req, res) => {
     try {
         const contactId = new objectId(req.params.id);
