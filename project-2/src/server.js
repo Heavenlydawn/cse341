@@ -53,14 +53,13 @@ app.use(passport.session());
 
 // ROUTES
 
-// Home route
+// Home route 
 app.get("/", ensureGuest, (req, res) => {
     res.sendFile(path.join(__dirname, "./utils/index.html"));
 });
 
 // Login route
 app.use("/auth", loginRoute);
-
 
 // Dashboard route
 app.use('/dashboard', dashboardRoute);
@@ -69,10 +68,10 @@ app.use('/dashboard', dashboardRoute);
 app.use("/", ensureAuth, require("./routes/swaggerRoute.js"));
 
 // Movies route
-app.use('/', moviesRoute);
+app.use('/movies', moviesRoute);
 
 // Cinemas route
-app.use('/', cinemasRoute);
+app.use('/cinemas', cinemasRoute);
 
 
 

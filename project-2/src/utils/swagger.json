@@ -12,7 +12,7 @@
     "https"
   ],
   "paths": {
-    "/movies": {
+    "/movies/": {
       "get": {
         "tags": [
           "Movies"
@@ -95,6 +95,9 @@
           "200": {
             "description": "OK"
           },
+          "400": {
+            "description": "Bad Request"
+          },
           "404": {
             "description": "Not Found"
           },
@@ -187,7 +190,7 @@
         }
       }
     },
-    "/cinemas": {
+    "/cinemas/": {
       "get": {
         "tags": [
           "Cinemas"
@@ -215,6 +218,9 @@
               "type": "object",
               "properties": {
                 "name": {
+                  "example": "any"
+                },
+                "location": {
                   "example": "any"
                 },
                 "address": {
@@ -287,6 +293,9 @@
                 "name": {
                   "example": "any"
                 },
+                "location": {
+                  "example": "any"
+                },
                 "address": {
                   "example": "any"
                 }
@@ -331,16 +340,6 @@
           },
           "500": {
             "description": "Internal Server Error"
-          }
-        }
-      }
-    },
-    "/api-docs": {
-      "get": {
-        "description": "",
-        "responses": {
-          "default": {
-            "description": ""
           }
         }
       }

@@ -12,7 +12,7 @@ router.get("/", moviesController.getAllMovies);
 // Get a single movie
 // #swagger.tags=['Movies']
 // #swagger.path = '/movies/{id}'
-router.get("/:id", moviesController.getMoviesById);
+router.get("/:id", moviesController.getMoviesById); 
 
 // Add a movie
 // #swagger.tags=['Movies']

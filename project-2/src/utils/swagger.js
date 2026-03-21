@@ -21,7 +21,7 @@ const doc = {
     //     },
     // ],
     // definitions: {
-    //     Movie: {
+    //     Movie: {     
     //         name: "Inception",
     //         description: "A mind-bending thriller about dream invasion.",
     //         year: 2010,
@@ -43,9 +43,11 @@ const doc = {
 
 const outputFile = "./swagger.json";
 const endpointsFiles = [
-    "../routes/moviesRoute.js",
-    "../routes/cinemasRoute.js",
-    "../routes/swaggerRoute.js",
+    // "../routes/*",
+    // "../routes/moviesRoute.js",
+    // "../routes/cinemasRoute.js",
+    // "../routes/swaggerRoute.js",
+    "../server.js",
 ];
 
 // swaggerAutogen(outputFile, endpointsFiles, doc).then(() => {

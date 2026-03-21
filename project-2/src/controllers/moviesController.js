@@ -21,18 +21,21 @@ const getAllMovies = async (req, res) => {
 };
 
 const getMoviesById = async (req, res) => {
+  // console.log('ID type:', typeof req.params.id)
+
   //#swagger.tags=['Movies']
   try {
     if (!objectId.isValid(req.params.id)) {
       return res.status(400).json({ message: "invalid id format" });
     }
-    const moviesId = new objectId(req.params.id);
+    const movieId = new objectId(req.params.id);
+    // const movieId = req.params.id;
 
     const result = await mongodb
       .getDatabase()
       .db()
       .collection("movies")
-      .findOne({ _id: moviesId });
+      .findOne({ _id: movieId });
     if (result) {
       res.status(200).json(result);
     } else {
@@ -90,6 +93,8 @@ const updateMovie = async (req, res) => {
   //#swagger.tags=['Movies']
   try {
     const movieId = new objectId(req.params.id);
+    // const movieId = req.params.id;
+
 
     const movieObject = {
       name: req.body.name,
@@ -125,6 +130,7 @@ const deleteMovie = async (req, res) => {
   //#swagger.tags=['Movies']
   try {
     const movieId = new objectId(req.params.id);
+    // const movieId = req.params.id;
 
     const result = await mongodb
       .getDatabase()

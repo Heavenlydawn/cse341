@@ -10,7 +10,7 @@ router.get("/", cinemasController.getAllCinemas);
 
 // Get a single cinema
 // #swagger.tags=['Cinemas']
-router.get("/:id", cinemasController.getCinemaById);
+router.get("/:id", cinemasController.getCinemaById); 
 
 // Add a cinema
 // #swagger.tags=['Cinemas']

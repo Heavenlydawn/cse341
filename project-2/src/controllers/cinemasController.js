@@ -26,11 +26,11 @@ const getAllCinemas = async (req, res) => {
 const getCinemaById = async (req, res) => {
   //#swagger.tags=['Cinemas']
   try {
-
       if (!objectId.isValid(req.params.id)) {
       return res.status(400).json({ message: 'invalid id format' });
     }
     const cinemaId = new objectId(req.params.id);
+    // const cinemaId = req.params.id;
 
     const result = await mongodb
       .getDatabase()
@@ -90,6 +90,8 @@ const updateCinema = async (req, res) => {
   //#swagger.tags=['Cinemas']
   try {
     const cinemaId = new objectId(req.params.id);
+    // const cinemaId = req.params.id;
+
     const cinemaObject = {
       name: req.body.name,
       location: req.body.address,
@@ -121,6 +123,7 @@ const deleteCinema = async (req, res) => {
   //#swagger.tags=['Cinemas']
   try {
     const cinemaId = new objectId(req.params.id);
+    // const cinemaId = req.params.id;
 
     const result = await mongodb
       .getDatabase()
