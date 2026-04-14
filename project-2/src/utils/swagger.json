@@ -5,11 +5,11 @@
     "description": "API serving a list of movies and cinemas",
     "version": "1.0.0"
   },
-  "host": "localhost:8080",
+  "host": "cse341-jpc3.onrender.com",
   "basePath": "/",
   "schemes": [
-    "http",
-    "https"
+    "https",
+    "http"
   ],
   "paths": {
     "/movies/": {
